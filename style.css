@@ -109,6 +109,11 @@ input[type=number]::-webkit-outer-spin-button {
     cursor: pointer;
 }
 
+.tipbtn:focus{
+    background: #26C2AE;
+    color: #00474B;
+}
+
 #custom{
     padding: 6px 15px;
     font-family: 'Space Mono', monospace;
@@ -147,6 +152,8 @@ input[type=number]::-webkit-outer-spin-button {
     color: #00474B;
     width: 100%;
 }
+
+
 
 #people:focus{
     border: 2px solid #26C2AE;
@@ -221,6 +228,23 @@ input[type=number]::-webkit-outer-spin-button {
     color: #00474B;
     cursor: pointer;
 } 
+
+.label-error{
+    display: flex;
+    justify-content: space-between;
+}
+
+.error{
+    color: #E17457;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+}
+
+.showerror{
+    border: 2px solid #E17052;
+}
 
 @media screen and (min-width: 1440px) {
     .tipbox{

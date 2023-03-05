@@ -8,6 +8,7 @@
     <title>Tip Calculator</title>
   </head>
   <body>
+
     <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="87" height="54">
       <path
         fill="#3D6666"
@@ -54,7 +55,10 @@
         <!-- People Count -->
   
         <div class="num-people">
-          <label for="people">Number of People</label>
+          <div class="label-error">
+            <label for="people">Number of People</label>
+            <span class="error" >Can’t be zero</span>
+          </div>
           <div class="person-input-wrap">
             <input type="number" id="people" />
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16">
@@ -78,7 +82,7 @@
               <h1 class="result-header">Tip Amount</h1>
               <span class="person">/ person</span>
             </div>
-            <span class="result-price">$0.00</span>
+            <span class="result-price" id="tipperson">$0.00</span>
           </div>
 
           <div class="total-wrap">
@@ -86,7 +90,7 @@
               <h1 class="result-header">Total</h1>
               <span class="person">/ person</span>
             </div>
-            <span class="result-price">$0.00</span>
+            <span class="result-price" id="totalperson">$0.00</span>
           </div>
 
         </div>
@@ -95,5 +99,7 @@
 
 
     </div>
+
+    <script src="/script.js"></script>
   </body>
 </html>
